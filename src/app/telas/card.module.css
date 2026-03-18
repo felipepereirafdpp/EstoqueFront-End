@@ -1,0 +1,68 @@
+.total {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center; 
+    gap: 40px;
+    padding: 40px;
+}
+.titulo{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 3px;
+    width: 100%;
+    font-size: 90%  ;
+}
+
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+}
+
+.card {
+    height: 55px;
+    width: 90%;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    padding: 20px;
+    font-weight: 500;
+    color: #333;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    cursor: pointer;
+    transition: all 0.20s ease;
+    font-size: 95%;
+    text-align: center;
+    
+}
+
+
+.card:hover {
+    background-color: #f5f5f5;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
+/* quando clicar (ativo) */
+.card.ativo {
+    background-color: #111;
+    color: #fff;
+    border: none;
+}
+.card:nth-child(odd) {
+    background-color: #1c00a6; 
+    color: white;/* azul claro */
+}
+
+.card:nth-child(even) {
+    background-color: #fffcfc; /* cinza */
+    color: #1c00a6;
+}   
