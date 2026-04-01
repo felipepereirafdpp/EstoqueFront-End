@@ -15,6 +15,7 @@ export default function RootLayout({
       <body>
           <header>
                 <h1>Painel Admistrativo</h1>
+                
           </header>
 
           <nav>
@@ -39,6 +40,9 @@ export default function RootLayout({
               <h2>© 2026 Sistema de Controle de Estoque</h2>
           </footer>
       </body>
+      
     </html>
+    
   );
+  
 }

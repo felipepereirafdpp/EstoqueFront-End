@@ -1,5 +1,5 @@
 .total {
-    height: 100%;
+    height: 90%;
     width: 100%;
     display: flex;
     justify-content: center; 
@@ -14,20 +14,21 @@
     align-items: center;
     padding: 3px;
     width: 100%;
-    font-size: 90%  ;
+    font-size: 80%  ;
 }
 
 
 .coluna {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 10px;
-    width: 50%;
+    width: 270px;
 }
 
 .card {
-    height: 55px;
-    width: 90%;
+    height: 50px;
+    width: 280px;
     background-color: #ffffff;
     display: flex;
     align-items: center;
@@ -39,9 +40,9 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
     cursor: pointer;
     transition: all 0.20s ease;
-    font-size: 95%;
+    font-size: 13px;
     text-align: center;
-    
+    justify-content: space-between;
 }
 
 
@@ -66,3 +67,17 @@
     background-color: #fffcfc; /* cinza */
     color: #1c00a6;
 }   
+.detalhes{
+    height: 20px;
+    width: 100px;
+    border-radius: 3px;
+}    
+.card:nth-child(even) .detalhes{
+    background-color: #1c00a6;
+    color: white;
+}
+
+.card:nth-child(odd) .detalhes {
+    background-color: #fffcfc;
+    color: #1c00a6;
+}

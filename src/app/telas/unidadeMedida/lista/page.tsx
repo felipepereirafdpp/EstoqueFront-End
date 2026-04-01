@@ -1,7 +1,12 @@
+'use client'
 import styles from "../../card.module.css";
+import botao from "../../button.module.css"
+import { useRouter } from 'next/navigation'; 
 
-export default function TelaListaCategoraia(){
+export default function TelaListaUnidade(){
+    const router = useRouter()
     return (
+
          <div>
             <div className={styles.titulo}>
             <h1>Unidades de Medida</h1>
@@ -9,19 +14,56 @@ export default function TelaListaCategoraia(){
             </div>
             <div className={styles.total}>
                 <div className={styles.coluna}>
-                    <div className={styles.card}>Miligrama (mg)</div>
-                    <div className={styles.card}>Grama (g)</div>
-                    <div className={styles.card}>Quilograma (Kg)</div>
-                    <div className={styles.card}>Mililitro (ml)</div>
+                    <div className={styles.card}>Miligrama (mg)
+                        <div className={styles.detalhes} onClick={() => router.push('/telas/categoria/cadastro')} >
+                            Veja Detalhes
+                        </div>
+                    </div>
+                    <div className={styles.card}>Grama (g)
+                        <div className={styles.detalhes} onClick={() => router.push('/telas/categoria/cadastro')} >
+                            Veja Detalhes
+                        </div>
+                    </div>
+                    <div className={styles.card}>Quilograma (Kg)
+                        <div className={styles.detalhes} onClick={() => router.push('/telas/categoria/cadastro')} >
+                            Veja Detalhes
+                        </div>
+                    </div>
+                    <div className={styles.card}>Mililitro (ml) 
+                        <div className={styles.detalhes} onClick={() => router.push('/telas/categoria/cadastro')} >
+                            Veja Detalhes
+                        </div>
+                    </div>
                 </div>
                 <div className={styles.coluna}>
-                    <div className={styles.card}>Litro (l)</div>
-                    <div className={styles.card}>Milimetro (mm)</div>
-                    <div className={styles.card}>Metro (m)</div>
-                    <div className={styles.card}>Unidade (un)</div>
-
+                    <div className={styles.card}>Litro (l)
+                        <div className={styles.detalhes} onClick={() => router.push('/telas/categoria/cadastro')} >
+                            Veja Detalhes
+                        </div>
+                    </div>
+                    <div className={styles.card}>Milimetro (mm)
+                        <div className={styles.detalhes} onClick={() => router.push('/telas/categoria/cadastro')} >
+                            Veja Detalhes
+                        </div>
+                    </div>
+                    <div className={styles.card}>Metro (m)
+                        <div className={styles.detalhes} onClick={() => router.push('/telas/categoria/cadastro')} >
+                            Veja Detalhes
+                        </div>
+                    </div>
+                    <div className={styles.card}>Unidade (un)
+                        <div className={styles.detalhes} onClick={() => router.push('/telas/categoria/cadastro')} >
+                            Veja Detalhes
+                        </div>
+                    </div>
                 </div>
+                
             </div>
+                <div className={botao.buttonCreate}>
+                    <div className={botao.button} onClick={()=> router.push('/telas/unidadeMedida/cadastro')}>
+                        Cadastrar Unidade de Medida
+                    </div>
+                </div>
 
         </div>
     )

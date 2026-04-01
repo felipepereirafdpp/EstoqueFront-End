@@ -8,13 +8,14 @@
 body {
   display: grid;
   height: 100vh;
-  grid-template-rows: 80px 1fr 60px;
+  grid-template-rows: 65px 1fr 60px;
   grid-template-columns: 220px 1fr;
   grid-template-areas:
     "header header"
     "nav main"
     "footer footer";
   background-color: #f5f5f5;
+  
 }
 
 
@@ -22,12 +23,14 @@ header {
   grid-area: header;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 25px;
   background-color: #0c00b3;
   color: white;
-  font-size: 100%;
+  font-size: 70%;
   font-weight: 600;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  
 }
 
 
@@ -44,10 +47,11 @@ nav {
 }
 nav ul{
   display: flex;
-  height: 40%;  
+  height: 70px;  
   flex-direction: column;
   justify-content: space-between;
-  
+  gap: 10px;
+  list-style: none;
   
   
 }
@@ -56,7 +60,8 @@ nav a{
 }
 
 nav ul li{
-  font-size: 115%;
+  font-size: 13px;
+ 
   padding: 10px;
   border-left: 2px solid #0c00b3;
   border-radius: 5px;
@@ -68,6 +73,7 @@ nav ul li:hover {
   background-color: #0c00b32e;
   cursor: pointer;
   transition: 0.2s;
+  width: 180px;
 }
 nav a:visited {
   color: #0c00b3;
@@ -82,10 +88,11 @@ nav a:active {
 main {
   grid-area: main;
   background-color: white;
-  border-radius: 12px;
+  border-radius: 12px;  
   height: 90%;
   box-shadow: 0 4px 15px rgba(0,0,0,0.08);
   margin: 30px;
+  
 }
 
 footer {
@@ -96,5 +103,5 @@ footer {
   background-color: #ffffff;
   border-top: 1px solid #e0e0e0;
   color: #777;
-  font-size: 14px;
+  font-size: 10px;
 } 
