@@ -39,3 +39,7 @@
 select.input {
     cursor: pointer;
 }
+.inputTextProduto{
+    display: flex;
+    flex-direction: column;
+}

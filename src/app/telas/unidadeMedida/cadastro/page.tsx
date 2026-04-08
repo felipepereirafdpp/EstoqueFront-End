@@ -18,10 +18,10 @@ export default function TelaCadastroUnidade(){
                 
                 
 
-                <label htmlFor="fracionavel"  className={style.label} defaultValue="nao">Permite fracionamento? </label>
-                <select name="fracionavel" id="" className={style.input}>
-                    <option value="nao" >Não</option>
-                    <option value="sim">Sim</option>
+                <label htmlFor="fracionavel"  className={style.label} >Permite fracionamento? </label>
+                <select name="fracionavel" id="" defaultValue="0" className={style.input}>
+                    <option value="0" >Não</option>
+                    <option value="1">Sim</option>
                 </select>
 
                 

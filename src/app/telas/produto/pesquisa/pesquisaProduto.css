@@ -1,0 +1,91 @@
+section{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    height: 95%;
+}
+.grup-pesquisa{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 80%;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    height: 80px;
+    align-items: flex-end; 
+    
+}
+.grup-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+    
+}
+
+.grup-table table {
+    border-collapse: collapse;
+    width: 80%;
+    min-width: 800px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.grup-table thead {
+   background-color: #1c00a6;
+    color: white;
+}
+
+.grup-table th {
+    padding: 12px;
+    text-align: left;
+    font-weight: bold;
+    
+}
+.grup-table tbody tr:hover {
+    background-color: #e6f0ff;  
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+.grup-table td {
+    padding: 12px;
+   
+    
+}
+
+
+
+/* Cada bloco agora em coluna */
+.block-pesquisa,
+.block-input-text {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* Inputs e select */
+.grup-pesquisa select,
+.grup-pesquisa input {
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    outline: none;
+    width: 300px;
+}
+
+/* Label */
+.grup-pesquisa label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #0c00b3; 
+
+}
+
