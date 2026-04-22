@@ -59,8 +59,8 @@ export default function TelaListaUnidade(){
                 </div>
                 
             </div>
-                <div className={botao.buttonCreate}>
-                    <div className={botao.button} onClick={()=> router.push('/telas/unidadeMedida/cadastro')}>
+                <div className={botao.buttonCreate} onClick={()=> router.push('/telas/unidadeMedida/cadastro')}>
+                    <div className={botao.button} >
                         Cadastrar Unidade de Medida
                     </div>
                 </div>

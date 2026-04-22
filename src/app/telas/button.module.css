@@ -3,7 +3,7 @@
     justify-content: space-evenly;
     align-items: center;
     width: 100%;
-    padding: 20px;
+    padding: 30px;
     
 }
 .button {
@@ -60,4 +60,16 @@
     color: white;
     font-weight: bold;
     font-size: 13px;
+}
+.blockButtonCreate{
+    background-color: #1c00a6;
+    height: 30px;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    transition: all 0.20s ease;
+    align-items: center;
+    cursor: pointer;
 }

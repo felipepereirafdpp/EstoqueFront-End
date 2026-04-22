@@ -1,11 +1,13 @@
+'use client'
 import Link from "next/link";
 import styles from "../../card.module.css";
 import style from "../../input.module.css";
 import botao from "../../button.module.css";
 import "./pesquisaProduto.css";
-
+import { useRouter } from "next/navigation";
 
 export default function TelaPesquisaProduto() {
+   const router = useRouter();
     return (
         <section>
             <div className={styles.titulo}>
@@ -18,7 +20,7 @@ export default function TelaPesquisaProduto() {
                     <select name="categoria" id="">
                         <option value="0"></option>
                         <option value="1">Garfo</option>
-                        <option value="2    ">Prato</option>
+                        <option value="2">Prato</option>
                     </select>
                 </div>
                 <div className="block-input-text">
@@ -41,20 +43,47 @@ export default function TelaPesquisaProduto() {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                        <tr onClick={() => router.push("/telas/produto/cadastro")}>
                             <td>Garfo</td>
                             <td>Garfo de Sopa</td>
                             <td>10</td>
                         </tr>
-                        <tr>
+                        <tr onClick={() => router.push("/telas/produto/cadastro")}>
                             <td>Garfo</td>
                             <td>Garfo de Sopa</td>
                             <td>10</td>
                         </tr>
+                        <tr onClick={() => router.push("/telas/produto/cadastro")}>
+                            <td>Garfo</td>
+                            <td>Garfo de Sopa</td>
+                            <td>10</td>
+                        </tr>
+                        <tr onClick={() => router.push("/telas/produto/cadastro")}>
+                            <td>Garfo</td>
+                            <td>Garfo de Sopa</td>
+                            <td>10</td>
+                        </tr>
+                        <tr onClick={() => router.push("/telas/produto/cadastro")}>
+                            <td>Garfo</td>
+                            <td>Garfo de Sopa</td>
+                            <td>10</td>
+                        </tr>
+                        <tr onClick={() => router.push("/telas/produto/cadastro")}>
+                            <td>Garfo</td>
+                            <td>Garfo de Sopa</td>
+                            <td>10</td>
+                        </tr>
+                        
                     </tbody>
                 </table>
             </div>
+            <div className={botao.blockButtonCreate}>
+                    <div className={botao.grupButtonProduto} onClick={() => router.push("/telas/produto/cadastro")}>
+                        Criar Produto
+                    </div>
+            </div>
 
+           
         </section>
     )
 }

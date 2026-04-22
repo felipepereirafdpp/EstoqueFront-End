@@ -43,3 +43,15 @@ select.input {
     display: flex;
     flex-direction: column;
 }
+
+.inputGrande {
+    width: 700px;
+    height: 120px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db; 
+    
+   
+    background-color: #ffffff;
+    transition: all 0.2s ease;
+
+}
